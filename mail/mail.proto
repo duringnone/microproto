@@ -37,9 +37,6 @@ message SendMailResponse {
  */
 // 获取邮件模板列表/详情
 message GetMailConfigListRequest {
-    int64 eId = 2;        // 模板表ID(详情)
-    string emailName = 3;   // 邮件模板名(模糊查询)
-    string emailTitle = 4;   // 邮件模板标题(模糊)
     int64 page = 8;      //当前页数
     int64 pageSize = 9; // 每页显示数
     string SerialNo = 10; // 流水号 [用于微服务全链路日志追踪]
